@@ -19,7 +19,7 @@ fn main() {
     // fill the vector that represents the game randomly with 0 and 1.
     for i in 0..game.height {
         for j in 0..game.width {
-            let random = rand::thread_rng().gen_range(0..5);
+            let random = rand::thread_rng().gen_range(0..8);
             game.world[i][j] = if random == 0 { 1 } else { 0 }
         }
     }
